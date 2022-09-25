@@ -1,0 +1,6 @@
+name = "sparkchart"
+usage_model = 'bundled'
+compatibility_flags = []
+workers_dev = true
+compatibility_date = "2022-08-26"
+main = 'index.js'
