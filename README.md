@@ -2,7 +2,9 @@
 
 A tiny Cloudflare Worker service that creates small SVG charts.
 
+It can be useful in no-code / low-code tools to add tiny charts in tables or similar views.
 
+![](table.png)
 
 ### Base URL
 
