@@ -6,12 +6,11 @@ async function handleRequest (request) {
   if (pathname.startsWith('/favicon')) return new Response('', { headers: { 'content-type': 'text' } })
 
   const refr = request.headers.get('Referer')
-  console.log(refr)
 
   const typesPath = pathname.replace('/', '') || 'bars'
   const types = typesPath.split('+')
 
-  const strdata = searchParams.get('data')
+  const strdata = searchParams.get('data') || ''
   const data = strdata.split(',').map(d => +d)
   const color = searchParams.get('color') || '#1F89F2'
   const spline = searchParams.get('spline')
